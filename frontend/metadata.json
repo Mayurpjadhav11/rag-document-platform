@@ -1,0 +1,6 @@
+{
+  "name": "AI PDF QA Agent",
+  "description": "AI PDF document question answering interface powered by local Ollama.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
