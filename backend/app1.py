@@ -44,6 +44,21 @@ def get_documents():
 
     return jsonify(pdf_files)
 
+@app.route("/filenames", methods=["GET"])
+def get_filenames():
+
+    files = os.listdir(UPLOAD_FOLDER)
+
+    pdf_names = []
+
+    for file in files:
+        if file.endswith(".pdf"):
+            pdf_names.append(file)
+
+    return jsonify({
+        "files": pdf_names
+    })
+
 
 if __name__ == "__main__":
     app.run(debug=True)
