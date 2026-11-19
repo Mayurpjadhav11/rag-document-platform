@@ -1,0 +1,6 @@
+flask>=3.0
+requests>=2.31
+pypdf>=4.0
+# --- dev / tests ---
+pytest>=8.0
+reportlab>=4.0   # only used by tests to generate sample PDFs
